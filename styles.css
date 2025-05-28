@@ -1,0 +1,111 @@
+/* Selector: entre llaves le das atributos a la etiqueta semantica, o por ID, o por clase */
+
+/* Selectores básicos */
+/* a: selector universal (*) */
+/* aplica a todos los elementos del html */
+/* selector de clase (.nombre) --> esta ultima, definis la clase con una palabra para darle un estilo
+agrupas en estilos las clases y lo podes reutilizar para configurarlo*/
+.Destacado {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    background-color: blanchedalmond;
+}
+
+header {
+    background-color: burlywood; /* Fondo verde */
+    color: white;              /* Texto blanco */
+    padding: 20px;             /* Espacio interior */
+    text-align: center;        /* Centra el texto */
+  }
+
+/* Selector de ID (#Nombre) */
+/* son algo unico los ID y los utilizo una vez */
+
+nav ul {
+    list-style: none;          
+    padding: 0;                
+    display: flex;             
+    justify-content: center;   
+    gap: 20px;                 
+  }
+
+#Home{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#id-001 {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Barra-Nav {
+    list-style: none;
+    text-decoration: none;
+    color: indianred;
+}
+
+.productos-container {
+    display: flex;             
+    justify-content: center;   
+    gap: 20px;                 
+    flex-wrap: wrap;           
+    margin-top: 20px;          
+  }
+  .producto img {
+    width: 150px;              
+    height: 150px;
+    object-fit: cover;
+  }
+  
+
+.Formulario-container {
+
+    border: 2px solid #ccc;
+    padding: 1px;
+    margin-bottom: 2px;
+    background-color: cornsilk;
+}
+
+#id-002 {
+    padding: 0;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+
+    
+}
+
+#id-003 {
+    padding: 0;
+    justify-content: flex-start;
+    border: 1px;
+    margin-bottom: 7px;
+    display: inline-block
+
+}
+
+/* Para configurar con css, un ID, con el numero # ponemos el nombre del ID  */
+
+/* Clase prevalece mas por jerarquia que una etiqueta semantica, pero no le gana al ID */
+
+/* con el !important, forza una regla, como ultimo recurso ya que rompe la cascada de css */
+
+#id-004 {
+
+    border: 2px solid #ccc;
+    padding: 1px;
+    margin-bottom: 2px;
+    background-color: cornsilk;
+}
+
+section {
+    padding: 20px;             
+    text-align: center;        
+  }
+
